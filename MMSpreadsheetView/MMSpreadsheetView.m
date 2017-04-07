@@ -300,10 +300,6 @@ const static NSUInteger MMScrollIndicatorTag = 12345;
             if (size.height > maxLockDistance) {
                 NSAssert(NO, @"Height of header too large! Reduce the number of header rows.");
             }
-            maxLockDistance = self.bounds.size.width - cellSize.width;
-            if (size.width > maxLockDistance) {
-                NSAssert(NO, @"Width of header too large! Reduce the number of header columns.");
-            }
             
             self.upperLeftContainerView.frame = CGRectMake(0.0f,
                                                            0.0f,
