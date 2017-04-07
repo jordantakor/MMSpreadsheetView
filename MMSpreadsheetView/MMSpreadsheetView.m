@@ -425,7 +425,7 @@ const static NSUInteger MMScrollIndicatorTag = 12345;
     CGSize size = [self collectionView:collectionView
                                 layout:layout
                 sizeForItemAtIndexPath:indexPathZero];
-    layout.itemSize = size;
+    layout.itemHeight = size.height;
 }
 
 #pragma mark - Scroll Indicator
